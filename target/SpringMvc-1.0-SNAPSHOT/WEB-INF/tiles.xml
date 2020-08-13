@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="master" template="/WEB-INF/view/frontend/master.jsp">
+        <put-attribute name="title" value=""/>
+        <put-list-attribute name="links">
+            <add-attribute value="/resources/css/fontawesome.css" />
+            <add-attribute value="/resources/css/slick.css" />
+            <add-attribute value="/resources/css/slick-theme.css" />
+            <add-attribute value="/resources/css/animate.css" />
+            <add-attribute value="/resources/css/themify-icons.css" />
+            <add-attribute value="/resources/css/bootstrap1.css" />
+            <add-attribute value="/resources/css/color1.css" />
+        </put-list-attribute>
+        <put-list-attribute name="scripts">
+            <add-attribute value="/resources/js/jquery-3.3.1.min.js" />
+            <add-attribute value="/resources/js/jquery-ui.min.js" />
+            <add-attribute value="/resources/js/jquery.exitintent.js"/>
+            <add-attribute value="/resources/js/exit.js"/>
+            <add-attribute value="/resources/js/popper.min.js"/>
+            <add-attribute value="/resources/js/slick.js"/>
+            <add-attribute value="/resources/js/menu.js"/>
+            <add-attribute value="/resources/js/lazysizes.min.js"/>
+            <add-attribute value="/resources/js/bootstrap.js"/>
+            <add-attribute value="/resources/js/bootstrap-notify.min.js"/>
+        </put-list-attribute>
+    </definition>
+    <definition name="404" template="/WEB-INF/view/frontend/404.jsp">
+
+    </definition>
+    <definition name="index" extends="master">
+        <put-attribute name="title" value="Trang chủ"/>
+        <put-attribute name="content" value="/WEB-INF/view/frontend/index.jsp"/>
+    </definition>
+    <definition name="verify-token" extends="master">
+        <put-attribute name="title" value="Xác thực"/>
+        <put-attribute name="content" value="/WEB-INF/view/frontend/verify-token.jsp"/>
+    </definition>
+    <definition name="product_category" extends="master">
+        <put-attribute name="title" value="Sản phẩm"/>
+        <put-attribute name="content" value="/WEB-INF/view/frontend/product_category.jsp"/>
+    </definition>
+    <definition name="product_list" extends="master">
+        <put-attribute name="title" value="Danh sách sản phẩm"/>
+        <put-attribute name="content" value="/WEB-INF/view/frontend/product_list.jsp"/>
+    </definition>
+    <definition name="product_detail" extends="master">
+        <put-attribute name="content" value="/WEB-INF/view/frontend/product_detail.jsp"/>
+    </definition>
+    <definition name="register" extends="master">
+        <put-attribute name="title" value="Đăng ký"/>
+        <put-attribute name="content" value="/WEB-INF/view/frontend/register.jsp"/>
+    </definition>
+    <definition name="cart" extends="master">
+        <put-attribute name="title" value="Giỏ hàng"/>
+        <put-attribute name="content" value="/WEB-INF/view/frontend/cart.jsp"/>
+    </definition>
+    <definition name="blog" extends="master">
+        <put-attribute name="title" value="Tin tức"/>
+        <put-attribute name="content" value="/WEB-INF/view/frontend/blog.jsp"/>
+    </definition>
+    <definition name="blog_detail" extends="master">
+        <put-attribute name="content" value="/WEB-INF/view/frontend/blog_detail.jsp"/>
+    </definition>
+    <definition name="checkout" extends="master">
+        <put-attribute name="title" value="Thanh toán"/>
+        <put-attribute name="content" value="/WEB-INF/view/frontend/checkout.jsp"/>
+    </definition>
+    <definition name="compare" extends="master">
+        <put-attribute name="title" value="So sánh"/>
+        <put-attribute name="content" value="/WEB-INF/view/frontend/compare.jsp"/>
+    </definition>
+    <definition name="forget_password" extends="master">
+        <put-attribute name="title" value="Phục hồi mật khẩu"/>
+        <put-attribute name="content" value="/WEB-INF/view/frontend/forget_password.jsp"/>
+    </definition>
+    <definition name="login" extends="master">
+        <put-attribute name="title" value="Đăng nhập"/>
+        <put-attribute name="content" value="/WEB-INF/view/frontend/login.jsp"/>
+    </definition>
+    <definition name="dashboard" extends="master">
+        <put-attribute name="title" value="Tài khoản cá nhân"/>
+        <put-attribute name="content" value="/WEB-INF/view/frontend/dashboard.jsp"/>
+    </definition>
+</tiles-definitions>

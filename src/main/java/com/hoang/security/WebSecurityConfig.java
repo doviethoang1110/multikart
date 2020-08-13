@@ -70,7 +70,7 @@ public class WebSecurityConfig {
         CorsConfigurationSource corsConfigurationSource()
         {
             CorsConfiguration configuration = new CorsConfiguration();
-            configuration.setAllowedOrigins(Arrays.asList("http://localhost:8080"));
+            configuration.setAllowedOrigins(Arrays.asList("https://multikart.herokuapp.com"));
             configuration.setAllowedMethods(Arrays.asList("GET","POST","PUT","DELETE"));
             configuration.setAllowedHeaders(ImmutableList.of("Authorization", "Cache-Control", "Content-Type"));
             UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
